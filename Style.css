@@ -1,6 +1,10 @@
+body{
+    margin: 0;
+    padding:
+}
 ul{
     list-style-type: disc;
-    margin: -8px;;
+    margin: 0;;
     padding:0;
     overflow: hidden;
     background-color: rgb(0, 0, 0);
@@ -21,6 +25,35 @@ li a{
     text-decoration:none;
 }
 img{
-    height: fit-content;
-    width:1250px;
+    width:100%;
+    height: auto;
+}
+.into-part{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.png1{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.overlaytxt{
+    font-size: 25px;
+    width: 1250px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+.title-name{
+    font-size: 50px;
+    -webkit-text-stroke: 2px black;
+}
+.subtitle-name{
+    -webkit-text-stroke: 0.5px black;
 }
