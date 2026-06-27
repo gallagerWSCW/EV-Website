@@ -59,86 +59,43 @@ img{
     -webkit-text-stroke: 0.5px black;
 }
 
-.carbon-part{
+.section{
     width: 100%;
     height: auto;
     position: relative;
 }
-.carbon-img{
+.section img{
     width: 100%;
     height: auto;
     display: block;
 }
-.carbon-overlay{
-    font-size: 25px;
+.overlay{
     width: 1250px;
     position: absolute;
     top: 50%;
     left: 50%;
+    width:80%;
     transform: translate(-50%, -50%);
     color: white;
+}
+.title{
     text-align: center;
+    margin-bottom: 40px;
+    font-size: 50px; ;
 }
-
-.benf-part{
-    width: 100%;
-    height: auto;
-    position: relative;
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
 }
-.benf-img{
-    width: 100%;
-    height: auto;
-    display: block;
+.content p{
+    flex:1;
+    text-align: left;
+    max-width:50%;
+    font-size: 20px;
 }
-.benf-overlay{
-    font-size: 25px;
-    width: 1250px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    text-align: center;
-}
-
-.prac-part{
-    width: 100%;
-    height: auto;
-    position: relative;
-}
-.prac-img{
-    width: 100%;
-    height: auto;
-    display: block;
-}
-.prac-overlay{
-    font-size: 25px;
-    width: 1250px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    text-align: center;
-}
-
-.cost-part{
-    width: 100%;
-    height: auto;
-    position: relative;
-}
-.cost-img{
-    width: 100%;
-    height: auto;
-    display: block;
-}
-.cost-overlay{
-    font-size: 25px;
-    width: 1250px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    text-align: center;
+.content button{
+    padding: 10px 25px;
+    font-size:18px;
 }
