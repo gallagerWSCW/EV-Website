@@ -1,0 +1,162 @@
+body{
+    margin: 0;
+    background-color: black; 
+    color: aliceblue;   
+}
+ul{
+    list-style-type: disc;
+    margin: 0;;
+    padding:0;
+    overflow: hidden;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+li{
+    margin:10px;
+    float:left;
+}
+
+li a{
+    display: block;
+    color:rgb(255, 255, 255);
+    text-align:end;
+    padding: 10px;
+    text-decoration:none;
+}
+
+
+
+
+
+
+.underline {
+width: 70px;
+height: 2px;
+background: white;
+margin-top: 8px;
+}
+
+
+.pg-title{
+    text-align: center;
+    font-size: 40px;
+}
+
+.pg-sub-title{
+    text-align: center;
+    font-size: 20px;
+    color: rgb(133, 133, 133);
+}
+.bg{
+    width: 100%;
+    height: auto;
+}
+
+
+.section {
+    position: relative;
+    width: 100%;
+}
+
+.bg{
+    width: 100%;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    color: white;
+    text-align: center;
+}
+
+.overlay h1{
+    margin-bottom: 30px;
+}.benf-part{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.content{
+    position: relative;
+    display:inline-block;
+}
+.rectangle{
+    width: 1100px;
+    display: block;
+}
+
+.card-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.card-content p{
+    width: 70%;
+    color: black;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.smokeimg{
+    width: 250px;
+    height: auto;
+}
+.rectangle{
+    opacity: 70%;
+}
+
+.numbers{
+    font-size: 30px;
+}
+.words{
+    font-size: 20px;
+}
+
+.stats{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+.stat{
+    padding-right: 100px;
+    padding-left: 100px;
+    text-align: center;
+    border-right: 2px solid white;
+}
+.gallery-container{
+    display: flex;
+    justify-content: center;
+    gap:20px;
+}
+.gallery{
+    display:inline-block;
+}
+.gallery img{
+    width: 300px;
+    height:300px;
+    object-fit:cover;
+    display: block;
+    border-radius: 5px;
+}
+.gallery h3{
+    margin:0;
+    padding: 15px;
+    background-color: rgb(60, 60, 60);
+    border-bottom-left-radius: 10px;
+    text-align: center;
+}
