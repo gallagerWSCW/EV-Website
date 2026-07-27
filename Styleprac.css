@@ -28,6 +28,8 @@ li a{
 
 
 
+
+
 .image-container{
     position: relative;
 }
@@ -60,4 +62,83 @@ li a{
 
 
 
+.car-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 500px;
+    margin: auto;
+    font-size: 18px;
+    
+}
 
+.car-grid div {
+    padding: 15px;
+}
+
+.car-grid div:nth-child(even) {
+    border-left: 2px solid rgb(255, 255, 255);
+}
+
+.grid-title {
+    font-weight: bold;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    font-size: 20px;
+}
+
+
+.home-charging-row{
+    display: flex;
+}
+
+.home-charging-container1{
+    position: relative;
+    justify-content: center;
+}
+
+.home-charging-img1{
+    width: 250px;
+    height:350px;
+    display: block;
+}
+
+
+
+
+.home-charging-container1:nth-child(1) {
+    z-index: 4;
+}
+
+.home-charging-container1:nth-child(2) {
+    z-index: 3;
+}
+
+.home-charging-container1:nth-child(3) {
+    z-index: 2;
+}
+
+.home-charging-container1:nth-child(4) {
+    z-index: 1;
+}
+
+.home-charging-img1 {
+    display: block;
+    box-shadow: 10px 0 30px rgba(0, 0, 0, 0.8);
+}
+
+.overlayhc1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-40%,-50%);
+
+}
+.overlayhc1 h3{
+    font-size: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.overlay p{
+    font-size: 25px;
+}
