@@ -88,6 +88,7 @@ li a{
 
 .home-charging-row{
     display: flex;
+    justify-content: center;
 }
 
 .home-charging-container1{
