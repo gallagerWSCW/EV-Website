@@ -1,0 +1,73 @@
+body{
+    margin: 0;
+    background-color: black; 
+    color: aliceblue;   
+}
+.section{
+    position:relative;
+    width: 100%;
+}
+.bg-ev-calc{
+    width:100%;
+    height:auto;
+    display: block;
+}
+
+.overlay{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display:flex;
+    align-items: center;
+}
+
+.img-ev-calc1{
+    height:450px;
+    width:auto;
+    opacity: 50%;
+}
+.img-ev-calc{
+    height:450px;
+    width:auto;
+}
+
+.calculator{
+    position:absolute;
+    top:50%;
+    left:35%;
+    transform: translate(-50%,-50%);
+    color:black;
+}
+
+.calculator button{
+    padding: 3px;
+    font-size: 15px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+
+.bg-petrol-calc{
+    width:100%;
+    height:auto;
+    display: block;
+}
+
+.img-petrol-calc1{
+    height:450px;
+    width:auto;
+    opacity: 50%;
+}
+.img-petrol-calc{
+    height:450px;
+    width:auto;
+}
+
+
+
+
+
+
+
