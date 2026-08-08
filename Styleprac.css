@@ -1,5 +1,6 @@
 body{
     margin: 0;
+    padding-top: 60px;
     background-color: black; 
     color: aliceblue;   
 }
@@ -11,17 +12,39 @@ ul{
     display: flex;
     justify-content: center;
     gap: 10px;
+
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+
+    transition: 
+        transform 0.4s ease,
+        opacity 0.4s ease,
+        filter 0.4s ease;
+    backdrop-filter: blur(10px);
 }
-li{
-    margin:10px;
+
+.navbar.hide {
+    transform: translateY(-100%);
+    filter: blur(10px);
 }
 
 li a{
     display: block;
     color:rgb(255, 255, 255);
     text-align:end;
-    padding: 10px;
+    padding: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     text-decoration:none;
+    backdrop-filter: blur(10px);
+}
+
+li a:hover{
+    color: black;
+    background-color: rgb(252, 252, 252);
 }
 
 .title{

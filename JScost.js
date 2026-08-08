@@ -1,3 +1,5 @@
+
+
 function calculateCost(){
 
     let battery = Number(document.getElementById("battery").value);
@@ -24,8 +26,6 @@ function resetCalculator(){
     document.getElementById("result").innerHTML ="";
 
 }
-
-
 
 
 function calculateFuelCost(){
