@@ -62,12 +62,12 @@ margin-top: 8px;
 
 .pg-title{
     text-align: center;
-    font-size: 40px;
+    font-size: clamp(15px, 3.5vw, 40px);
 }
 
 .pg-sub-title{
     text-align: center;
-    font-size: 20px;
+    font-size: clamp(10px, 1.7vw, 20px);
     color: rgb(133, 133, 133);
 }
 .bg{
@@ -110,7 +110,7 @@ margin-top: 8px;
     display:inline-block;
 }
 .rectangle{
-    width: 1100px;
+    width: clamp(300px, 95vw, 1100px);
     display: block;
 }
 
@@ -130,13 +130,13 @@ margin-top: 8px;
 .card-content p{
     width: 70%;
     color: black;
-    font-size: 18px;
+    font-size: clamp(9px, 1.65vw, 18px);
     line-height: 1.6;
     text-align: left;
 }
 
 .smokeimg{
-    width: 250px;
+    width:clamp(50px, 21vw, 250px);
     height: auto;
 }
 .rectangle{
@@ -144,10 +144,10 @@ margin-top: 8px;
 }
 
 .numbers{
-    font-size: 30px;
+    font-size: clamp(10px, 2.5vw, 30px);
 }
 .words{
-    font-size: 20px;
+    font-size: clamp(8px, 1.7vw, 20px);
 }
 
 .stats{
@@ -156,31 +156,31 @@ margin-top: 8px;
     justify-content: center;
 }
 .stat{
-    padding-right: 100px;
-    padding-left: 100px;
+    padding-right: clamp(40px, 8.3vw, 100px);
+    padding-left: clamp(40px, 8.3vw, 100px);
     text-align: center;
     border-right: 2px solid white;
 }
 .gallery-container{
     display: flex;
     justify-content: center;
-    gap:20px;
+    gap:clamp(8px, 1.7vw, 20px);
 }
 .gallery{
-    width: 250px;
+    width: clamp(50px, 21vw, 250px);
     display:inline-block;
     vertical-align: top;
 }
 .gallery img{
-    width: 250px;
-    height:250px;
+    width: clamp(50px, 21vw, 250px);
+    height:clamp(50px, 21vw, 250px);
     object-fit:cover;
     display: block;
     border-radius: 5px;
 }
 .gallery h3{
     margin:0;
-    padding: 15px;
+    padding: clamp(6px, 1.25vw, 15px);
     background-color: rgb(60, 60, 60);
     border-bottom-left-radius: 10px;
     text-align: center;
@@ -188,7 +188,7 @@ margin-top: 8px;
 
 .gallery p{
     margin:0;
-    padding:0 15px;
+    padding: clamp(6px, 1.25vw, 15px);
     background-color: rgb(110, 112, 113);
     color: aliceblue;
 
@@ -198,8 +198,8 @@ margin-top: 8px;
     transition: max-height 0.4s ease, opacity 0.4s ease, padding 0.4s ease;
 }
 .gallery:hover p{
-    max-height:150px;
-    padding: 15px;
+    max-height:clamp(60px, 12.5vw, 150px);
+    padding: clamp(6px, 1.25vw, 15px);
     opacity: 1;
 }
 
@@ -225,7 +225,7 @@ margin-top: 8px;
     width:40%;
     color: white;
     box-sizing: border-box;
-    font-size: 20px;
+    font-size: clamp(8px, 1.7vw, 20px);
     text-align: left;
     background:linear-gradient(
         to right,
@@ -234,8 +234,8 @@ margin-top: 8px;
         rgba(0, 0, 0, 0.45),
         rgba(0, 0, 0, 0.05)       
     );
-    padding: 80px;
-    padding-bottom:90px;
+    padding: clamp(30px, 6.7vw, 80px);
+    padding-bottom:clamp(40px, 7.5vw, 90px);
 }
 .overlay1 h1{
     text-align: center;
