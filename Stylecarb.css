@@ -250,8 +250,8 @@ margin-top: 8px;
 }
 .text {
     width: 50%;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: clamp(20px, 4.2vw, 50px);
+    padding-right: clamp(20px, 4.2vw, 50px);
 }
 .transport-carbon1 img {
     width: 300px;
