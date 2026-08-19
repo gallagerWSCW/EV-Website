@@ -201,47 +201,72 @@ img{
 }
 
 
-.section{
-    width: 100%;
-    height: auto;
-    position: relative;
-}
-.section img{
-    width: 100%;
-    height: auto;
-    display: block;
-}
-.overlay{
-    width: 100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width:80%;
-    transform: translate(-50%, -50%);
+.section-card{
+    width: 90%;
+    display: flex;
+    margin:8px auto;
+    border-bottom: 1px solid white;
+    text-decoration: none;
     color: white;
+    box-sizing: border-box;
+    transition: 
+        background-color 0.5s ease, 
+        border-color 0.5s ease,
+        transform 0.5s ease;
 }
-.title{
+.section-card:first-child{
+    border-top: 1px solid white;
+}
+.number{
+    font-size: clamp(50px, 8vw, 120px);
+    font-weight: bold;
+    color: rgba(224, 133, 133, 0.8);
+    display: flex;
+    padding: 20px;
+    align-items: center;
+}
+.section-content{
+    flex: 1;
+    padding:40px;
+}
+.section-content h1{
     text-align: center;
+    border-top: 2px solid rgb(158, 183, 122);
+    border-bottom: 2px solid rgb(158, 183, 122);
     margin-bottom: 40px;
     font-size: clamp(15px, 4vw, 50px);
+    color: rgb(112, 250, 158);
 }
-.content{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 40px;
-}
-.content p{
-    flex:1;
+.section-content p{
     text-align: left;
-    max-width:50%;
+    max-width:100%;
     font-size: clamp(5px, 1.66vw, 20px);
 }
-.button{
-    padding: clamp(5px, 1vw, 10px)
-             clamp(12px, 2vw, 25px);
-    font-size: clamp(5px, 1.66vw, 20px);
-    background: white;
-    color:black;
-    text-decoration: none;
+.section-card img{
+    width: clamp(100px, 33.2vw, 400px);
+    height: auto;
+    object-fit: cover;
+    display: block;
+    margin:15px;
+    border-bottom-left-radius: 35px;
+    border-top-right-radius: clamp(10.5px, 3vw, 35px);
+    filter: grayscale(20%) brightness(0.8);
+}
+
+.section-card:hover{
+    background-color: rgb(197, 240, 190);
+    border-color: rgb(24, 179, 76);
+    transform: scale(1.02) translateY(-5px);
+}
+.section-card:hover .section-content p{
+    color: rgb(3, 3, 3);
+}
+.section-card:hover .section-content h1{
+    color: rgb(2, 105, 36);
+}
+.section-card:hover .number{
+    color: rgb(125, 36, 36);
+}
+.section-card:hover img{
+    filter: grayscale(0%) brightness(1);
 }
