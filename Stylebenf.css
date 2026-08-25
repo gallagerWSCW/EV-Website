@@ -166,10 +166,56 @@ li a:hover{
 
 
 .elec-nz{
-    background-color: rgb(3, 3, 72);
-    padding: 20px;
-    margin-top: 10px;
+    padding: 60px;
+    padding-bottom: 0px;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
+.elec-content{
+    width:50%;
+}
+.elec-content h1{
+    font-size: 50px;
+    margin-top: -10px;
+    margin-bottom: -10px;
+}
+.elec-content h1.clean-elec{
+    color:#85e085ee
+}
+
+.elec-stat{
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.circle {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #99f299;
+}
+.circle h2 {
+    font-size: 60px;
+    color: #a9f5a9;
+    margin: 0;
+}
+.circle p{
+    margin-top: 20px;
+    color: white;
+    font-size: 12px;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+
 .gallery img{
     width: 1250px;
 }
