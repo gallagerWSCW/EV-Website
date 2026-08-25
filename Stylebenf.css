@@ -96,9 +96,11 @@ li a:hover{
 
 
 .subtit{
-    color: rgb(232, 232, 232);
+    color: rgb(213, 213, 186);
     text-align: center;
-    margin: 50px 0 30px;}
+    margin: 50px 0 30px;
+    font-size: 50px;
+}
 
 .benf-introduction{
     display: flex;
@@ -215,8 +217,33 @@ li a:hover{
     text-align: center;
 }
 
+.gallery{
+    padding:60px;
+    text-align: center;
+}
+.gallery h1{
+    font-size: 45px;
+}
+.gallery-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap:25px;
+}
 
-.gallery img{
-    width: 1250px;
+.energy-card {
+    border-radius: 15px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+.energy-card:hover {
+    transform: translateY(-8px);
+}
+.energy-card img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+.energy-card h2{
+    color:white;
 }
 

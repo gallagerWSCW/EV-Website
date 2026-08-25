@@ -68,13 +68,18 @@ margin-top: 8px;
 
 .pg-title{
     text-align: center;
-    font-size: clamp(15px, 3.5vw, 40px);
+    font-size: clamp(30px, 7vw, 80px);
+    background: linear-gradient(90deg, rgb(226, 255, 226), rgb(168, 248, 168));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin:0;
 }
 
 .pg-sub-title{
     text-align: center;
-    font-size: clamp(10px, 1.7vw, 20px);
-    color: rgb(133, 133, 133);
+    font-size: clamp(1px, 2.5vw, 30px);
+    color: rgb(180, 180, 180);
 }
 .bg{
     width: 100%;
