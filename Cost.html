@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Stylecost.css">
+    <link rel="stylesheet" href="Style.css">
     <script src="JScost.js"></script>
     <script src="indexJS.js"></script>
     <title>Document</title>
@@ -28,17 +29,24 @@
             <div class="calculator">
                 <h2>EV Cost Calculator</h2>
                 <h3>Battery Capacity</h3>
-                <input type="number" id="battery">
-                <h3>Cost pe kWh ($)</h3>
-                <input type="number" step="0.01" id="cost">
-                <h3>Distance tavelled (km)</h3>
-                <input type="number" id="distance"><br><br>
-                <button onclick="calculateCost()">Calculate</button>
+                <div class="input-wrapper">
+                    <input type="number" placeholder="60" id="battery">
+                    <span class="unit">kWh</span>
+                </div>
+                <h3>Cost per kWh</h3>
+                <div class="input-wrapper">
+                    <input type="number" placeholder="0.30" step="0.01" id="cost">
+                    <span class="unit">$</span>
+                </div>
+                <h3>Distance tavelled</h3>
+                <div class="input-wrapper">
+                    <input type="number" placeholder="400" id="distance">
+                    <span class="unit">km</span>
+                </div>
+                <button class="calculator-button" onclick="calculateCost()">Calculate</button>
                 <h3 id="result"></h3>
-                <button onclick="resetCalculator()">Reset</button>
-                
+                <button class="reset-btn" onclick="resetCalculator()">Reset</button>
             </div>
-            <img src="EV calc img.jpg" class="img-ev-calc">
         </div>
 
     </div>
@@ -46,19 +54,23 @@
     <div class="section">
         <img src="petrol calc bg.jpg" class="bg-petrol-calc">
         <div class="overlay">
-            <img src="rectangle cost.png" class="img-petrol-calc1">
             <div class="calculator">
                 <h2>Fuel Cost Calculator</h2>
                 <h3>Fuel Price</h3>
-                <input type="number" id="fuelPrice">
+                <div class="input-wrapper">
+                    <input type="number" placeholder="3" id="fuelPrice">
+                    <span class="unit">$</span>
+                </div>
                 <h3>Fuel Consumption (L/100km)</h3>
-                <input type="number" step="0.01" id="fuelConsumption">
-                <button onclick="calculateFuelCost()">Calculate</button>
+                <div class="input-wrapper">
+                    <input type="number" placeholder="10" step="0.01" id="fuelConsumption">
+                    <span class="unit">L</span>
+                </div>
+                <button class="calculator-button2" onclick="calculateFuelCost()">Calculate</button>
                 <h3 id="resultfuel"></h3>
-                <button onclick="resetFuelCalculator()">Reset</button>
+                <button class="reset-btn" onclick="resetFuelCalculator()">Reset</button>
                 
             </div>
-            <img src="petrol calc img.jpg" class="img-petrol-calc">
         </div>
 
     </div>

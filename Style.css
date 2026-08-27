@@ -193,12 +193,12 @@ img{
 }
 .overlayabout{
     position: absolute;
-    top: 25%;
+    top: 55%;
     left: 80%;
     transform: translate(-50%, -50%);
     color: white;
     text-align: left;
-    font-size: clamp(5px, 1.66vw, 20px);
+    font-size: clamp(5px, 1.66vw, 18px);
 }
 
 
