@@ -6,6 +6,7 @@ body{
     overflow-x: hidden;
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
 .navbar{
     list-style-type: none;
     margin: 0;
@@ -271,3 +272,799 @@ img{
 .section-card:hover img{
     filter: grayscale(0%) brightness(1);
 }
+
+
+
+/*  EV BENEFITS     EV BENEFITS     EV BENEFITS     EV BENEFITS     EV BENEFITS     EV BENEFITS     EV BENEFITS
+    EV BENEFITS     EV BENEFITS     EV BENEFITS     EV BENEFITS     EV BENEFITS     EV BENEFITS     EV BENEFITS
+    EV BENEFITS     EV BENEFITS     EV BENEFITS     EV BENEFITS     EV BENEFITS     EV BENEFITS     EV BENEFITS     */
+
+
+
+.underline {
+width: 70px;
+height: 2px;
+background: white;
+margin-top: 8px;
+}
+
+
+.ce-pg-title{
+    text-align: center;
+    font-size: clamp(30px, 7vw, 80px);
+    background: linear-gradient(90deg, rgb(226, 255, 226), rgb(168, 248, 168));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.ce-pg-sub-title{
+    text-align: center;
+    font-size: clamp(1px, 2.5vw, 30px);
+    color: rgb(180, 180, 180);
+}
+.carbem-bg{
+    width: 100%;
+    height: auto;
+}
+.carbem-section {
+    position: relative;
+    width: 100%;
+}
+.carbem-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    color: white;
+    text-align: center;  
+}
+.carbem-overlay h1{
+    margin-bottom: 30px;
+}
+.benf-part{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.carbem-content{
+    position: relative;
+    display:inline-block;
+}
+.carbem-rectangle{
+    width: clamp(300px, 95vw, 1100px);
+    display: block;
+    opacity: 40%;
+}
+
+.card-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.card-content p{
+    width: 70%;
+    color: black;
+    font-size: clamp(9px, 1.65vw, 18px);
+    line-height: 1.6;
+    text-align: left;
+}
+
+.smokeimg{
+    width:clamp(50px, 21vw, 250px);
+    height: auto;
+}
+
+.numbers{
+    font-size: clamp(15px, 3.2vw, 40px);
+    font-family: monospace;
+    color:rgb(133, 194, 115);
+}
+.words{
+    font-size: clamp(8px, 1.7vw, 20px);
+}
+
+.stats{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+
+}
+.stat{
+    padding-right: clamp(40px, 8.3vw, 100px);
+    padding-left: clamp(40px, 8.3vw, 100px);
+    text-align: center;
+    color:rgb(225, 239, 202);
+    border-right: 2px solid rgb(191, 233, 189);
+}
+.stat:last-child{
+    border-right: none;
+}
+
+
+
+
+.gallery-part{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.gallerybg{
+    width:100%;
+    display: block;
+}
+.slider{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height:100%;
+    display:flex;
+    align-items:center;
+    padding: 20px;
+}
+
+
+.gallery-container{
+    display: flex;
+    gap:clamp(8px, 1.7vw, 20px);
+    width:100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+}
+.gallery-container::-webkit-scrollbar {
+    height:6px;
+}
+.gallery-container::-webkit-scrollbar-thumb{
+    background: rgba(151, 206, 245, 0.5);
+    border-radius: 10px;
+}
+
+.gallery-container::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+.gallery{
+    position: relative;
+    flex: 0 0 calc((100% - 40px) / 3.3);
+    box-sizing: border-box;
+    padding-left: 20px;
+}
+.gallery-image{
+    width: 80%;
+    overflow:hidden;
+    border-radius:20px;
+}
+.gallery-image img{
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit:cover;
+    display: block;
+    transition:transform 0.4s ease;
+}
+
+
+.gallery:hover .gallery-image img{
+    transform: scale(1.25);
+}
+
+.galleryinfo{
+    width: 80%;
+    box-sizing: border-box;
+    transition: opacity 0.4s ease;
+    opacity:0;
+    padding:20px;
+}
+.gallery:hover .galleryinfo{
+    opacity:1;
+}
+
+
+
+
+
+
+
+
+.transport-carbon{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.transport-carbon img{
+    width:100%;
+}
+
+.overlay1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:40%;
+    color: white;
+    box-sizing: border-box;
+    font-size: clamp(8px, 1.7vw, 20px);
+    text-align: left;
+    background:linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.85),
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.45),
+        rgba(0, 0, 0, 0.05)       
+    );
+    padding: clamp(30px, 6.7vw, 80px);
+    padding-bottom: 0px;
+}
+.overlay1 h1{
+    text-align: center;
+
+}
+
+
+.transport-carbon1 {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 50px;
+}
+.text {
+    width: 50%;
+}
+.transport-carbon1 img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    border: solid rgb(32, 108, 7) 2px;
+}
+
+
+.vs{
+    color:rgb(153, 249, 122);
+    margin:10px;
+    padding:10px;
+    border: solid rgb(153, 249, 122) 1.5px;
+    border-radius: 20px;
+    background-color: rgb(54, 54, 54);
+    
+}
+.transport-carbon1-t1{
+    color: rgb(229, 244, 228);
+}
+.text h1{
+    color: rgb(196, 232, 191);
+}
+.transport-carbon1-t2{
+    color: rgb(176, 248, 142);
+}
+        
+        
+
+
+/*  EV BENEFITS     EV BENEFITS     EV BENEFITS     EV BENEFITS     EV BENEFITS     EV BENEFITS     EV BENEFITS
+    EV BENEFITS     EV BENEFITS     EV BENEFITS     EV BENEFITS     EV BENEFITS     EV BENEFITS     EV BENEFITS
+    EV BENEFITS     EV BENEFITS     EV BENEFITS     EV BENEFITS     EV BENEFITS     EV BENEFITS     EV BENEFITS     */
+
+
+.intro-part{
+    position: relative;
+    height: 350px;
+}
+.benf-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.img-overlay{
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0.85) 0%,
+        rgba(0, 0, 0, 0.55) 45%,
+        rgba(0, 0, 0, 0.15) 100%
+    );
+}
+.title-name {
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+    width: 50%;
+    color: white;
+    text-align: left;
+    
+}
+.title{
+    display: flex;
+}
+.name-EV{
+    font-size: 75px;
+    color:rgb(228, 252, 228);
+}
+.name-benf{
+    font-size: 75px;
+    color:rgb(111, 192, 111);
+}
+.green-line{
+    width: 200px;
+    height:4px;
+    background-color: green;
+}
+
+
+.subtit{
+    color: rgb(213, 213, 186);
+    text-align: center;
+    margin: 50px 0 30px;
+    font-size: 50px;
+}
+
+.benf-introduction{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+.section{
+    width: 40%;
+    padding: 25px;
+    border-radius: 25px;
+    border: 1px solid #333;
+
+}
+.section:hover{
+    transform: translateY(-8px);
+    border-radius: 25px;
+    border: 1.5px solid #929292;
+    transition: .3s;
+}
+
+
+.section h4{
+    color: red;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+.section h4.ev{
+    color: #6fc06f;
+}
+
+.section h1{
+    display: inline;
+    font-size: 55px;
+    color: red;
+}
+.section h1.ev{
+    color: #6fc06f;
+}
+
+.section h2{
+    display: inline;
+    color: red;
+}
+.section h2.ev{
+    color: #6fc06f;
+}
+.section p{
+    color: #bbb;
+    line-height: 1.6;
+}
+
+.bg{
+    width: 100%;
+    height: 200px;;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.benf-intro{
+    display: flex;
+    justify-content: center;
+    gap:125px;
+}
+
+
+.elec-nz{
+    padding: 60px;
+    padding-bottom: 0px;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.elec-content{
+    width:50%;
+}
+.elec-content h1{
+    font-size: 50px;
+    margin-top: -10px;
+    margin-bottom: -10px;
+}
+.elec-content h1.clean-elec{
+    color:#85e085ee
+}
+
+.elec-stat{
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.circle {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #99f299;
+}
+.circle h2 {
+    font-size: 60px;
+    color: #a9f5a9;
+    margin: 0;
+}
+.circle p{
+    margin-top: 20px;
+    color: white;
+    font-size: 12px;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+.benf-gallery{
+    padding:60px;
+    text-align: center;
+}
+.benf-gallery h1{
+    font-size: 45px;
+}
+.gallery-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap:25px;
+}
+
+.energy-card {
+    border-radius: 15px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+.energy-card:hover {
+    transform: translateY(-8px);
+}
+.energy-card img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+.energy-card h2{
+    color:white;
+}
+
+
+/*  EV PRACTICALITY     EV PRACTICALITY     EV PRACTICALITY     EV PRACTICALITY     EV PRACTICALITY     EV PRACTICALITY     
+    EV PRACTICALITY     EV PRACTICALITY     EV PRACTICALITY     EV PRACTICALITY     EV PRACTICALITY     EV PRACTICALITY     
+    EV PRACTICALITY     EV PRACTICALITY     EV PRACTICALITY     EV PRACTICALITY     EV PRACTICALITY     EV PRACTICALITY     */    
+
+
+.titleevprac{
+    text-align: center;
+    font-size: 50px;
+    margin-top: 60px;
+    text-align: center;
+    background: linear-gradient(90deg, #bcbcbc, #525252);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
+}
+
+.subtitevprac{
+    font-size: 40px;
+    text-align: center;
+    border-bottom: 1px solid grey;
+    width: 30%;
+    margin:0 auto;
+    margin-bottom: 40px;
+    margin-top: 10px;
+    background: linear-gradient(90deg, #bcbcbc, #525252);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+
+.intro-title{
+    font-size: 40px;
+    text-align: left;
+    background: linear-gradient(90deg, rgb(196, 196, 196), rgb(109, 109, 109));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.image-container{
+    position: relative;
+}
+
+.intro-img{
+    width: 1250px;
+    display: block;
+}
+
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 80px;
+    text-align: left;
+    transform: translateY(-50%);
+
+}
+.overlay h2{
+    font-size: 30px;
+    padding-bottom: 30px;
+}
+
+.overlay p{
+    font-size: 25px;
+}
+
+
+
+
+.car-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 500px;
+    margin: auto;
+    font-size: 18px;
+    
+}
+
+.car-grid div {
+    padding: 15px;
+}
+
+.car-grid div:nth-child(even) {
+    border-left: 2px solid rgb(179, 179, 179);
+}
+
+.grid-title {
+    font-weight: bold;
+    border-bottom: 2px solid rgb(179, 179, 179);
+    font-size: 20px;
+}
+.car-grid div:not(.grid-title){
+    transition: 0.2s ease;
+}
+
+.car-grid div:not(.grid-title):hover{
+    background-color: rgb(44, 44, 44);
+}
+
+
+.home-charging-row{
+    display: flex;
+    justify-content: center;
+}
+
+.home-charging-container1{
+    position: relative;
+    justify-content: center;
+}
+
+.home-charging-img1{
+    width: 250px;
+    height:350px;
+    display: block;
+}
+
+.home-charging-container1:hover{
+    transform: translateY(-10px);
+}
+
+
+
+.home-charging-container1:nth-child(1) {
+    z-index: 4;
+}
+
+.home-charging-container1:nth-child(2) {
+    z-index: 3;
+}
+
+.home-charging-container1:nth-child(3) {
+    z-index: 2;
+}
+
+.home-charging-container1:nth-child(4) {
+    z-index: 1;
+}
+
+.home-charging-img1 {
+    display: block;
+    box-shadow: 10px 0 30px rgba(0, 0, 0, 0.8);
+}
+
+.overlayhc1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-40%,-50%);
+
+}
+.overlayhc1 h3{
+    font-size: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.overlay p{
+    font-size: 25px;
+}
+
+
+
+/*  COST SAVINGS     COST SAVINGS     COST SAVINGS     COST SAVINGS     COST SAVINGS     COST SAVINGS    COST SAVINGS     
+    COST SAVINGS     COST SAVINGS     COST SAVINGS     COST SAVINGS     COST SAVINGS     COST SAVINGS    COST SAVINGS     
+    COST SAVINGS     COST SAVINGS     COST SAVINGS     COST SAVINGS     COST SAVINGS     COST SAVINGS    COST SAVINGS   */
+        
+.cost-title{
+    font-size: 40px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.cost-section{
+    position:relative;
+    width: 100%;
+    min-height:500px;
+    padding: 60px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    overflow:hidden;
+}
+.bg-ev-calc{
+    position: absolute;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    opacity: 50%;
+}
+.bg-petrol-calc{
+    position: absolute;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    opacity: 50%;
+}
+
+.cost-overlay{
+    width:100%;
+    position: relative;
+    display:flex;
+    align-items: center;
+    z-index:1;
+    justify-content: center;
+}
+
+.img-ev-calc1,.img-ev-calc{
+display: none;}
+
+.calculator{
+    width: 400px;
+    box-sizing: border-box;
+    padding:30px;
+    color:white;
+    background:rgba(20,20,20);
+    border: 1px solid rgb(179, 179, 179);
+    border-radius: 20px;
+}
+.calculator h2{
+    margin-top: 0;
+    font-size: 28px;
+}
+.calculator h3{
+    color: rgb(193, 193, 193);
+    font-size: 18px;
+}
+.calculator input{
+    width: 100%;
+    padding:12px;
+    box-sizing: border-box;
+    border: 1px solid #444;
+    border-radius:9px;
+    background:black;
+    color:white;
+}
+.calculator input:focus{
+    border-color:greenyellow;
+}
+.calculator-button{
+    width:100%;
+    margin-top: 20px;
+    padding:12px;
+    border:1px solid rgb(160, 221, 160);
+    border-radius: 9px;
+    background-color: rgb(64, 161, 29);
+    font-size: 15px;
+    color:white;
+    cursor: pointer;
+}
+.calculator-button2{
+    width:100%;
+    margin-top: 20px;
+    padding:12px;
+    border:1px solid rgb(244, 152, 106);
+    border-radius: 9px;
+    background-color:rgb(156, 56, 7);
+    font-size: 15px;
+    color:white;
+    cursor: pointer;
+}
+
+.calculator-button:hover,.calculator-button2:hover{
+    transform: translateY(-2px);
+}
+
+.reset-btn{
+    width:100%;
+    margin-top: 20px;
+    padding:12px;
+    background-color: transparent;
+    border:1px solid #555;
+    border-radius: 9px;
+    color: rgb(219, 219, 219);
+    font-size: 15px;
+    cursor: pointer;
+}
+.reset-btn:hover{
+    background-color: #292929;
+    border-color: #777;
+    color:white;
+}
+
+
+
+.input-wrapper{
+    position:relative;
+    width:100%;
+}
+.input-wrapper input{
+    width:100%;
+    padding:12px;
+    padding-right:90px;
+}
+.input-wrapper input::placeholder{
+    color:#666
+}
+.unit{
+    position: absolute;
+    right:12px;
+    top:50%;
+    transform:translateY(-50%);
+    color:#888;
+    font-size:14px;
+    pointer-events: none;
+}
+
+
+
