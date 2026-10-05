@@ -3,28 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Style.css">
-    <script src="JScost.js"></script>
-    <script src="indexJS.js" defer></script>
+    <link rel="stylesheet" href="../Style.css">
+    <script src="../JavaScriptFiles/indexJS.js" defer></script>
+    <script src="../JavaScriptFiles/JScost.js"></script>
     <title>Document</title>
 
 </head>
 <body>
 
     <ul class="navbar" id="navbar">
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="CarbonEmissionPage.html">CARBON EMISSION</a></li>
-        <li><a href="EvBenefits.html">EV BENEFITS</a></li>
-        <li><a href="EvPracticality.html">EV PRACTICALITY</a></li>
-        <li><a href="Cost.html">COST SAVINGS</a></li>
+        <li><a href="/Pages/index.html">HOME</a></li>
+        <li><a href="/Pages/CarbonEmissionPage.html">CARBON EMISSION</a></li>
+        <li><a href="/Pages/EvBenefits.html">EV BENEFITS</a></li>
+        <li><a href="/Pages/EvPracticality.html">EV PRACTICALITY</a></li>
+        <li><a href="/Pages/Cost.html">COST SAVINGS</a></li>
     </ul>
+    <button class="mobile-menu-button" id="mobileMenuButton">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-links">
+            <a href="/Pages/index.html">HOME</a>
+            <a href="/Pages/CarbonEmissionPage.html">CARBON EMISSION</a>
+            <a href="/Pages/EvBenefits.html">EV BENEFITS</a>
+            <a href="/Pages/EV Practicality.html">EV PRACTICALITY</a>
+            <a href="/Pages/Cost.html">COST SAVINGS</a>
+        </div>
+    </div>
 
     
     <h1 class="cost-title">COST SAVINGS</h1>
     <div class="cost-section">
-        <img src="EV calc bg.jpg" class="bg-ev-calc">
+        <img src="../Images/Cost/EV calc bg.jpg" class="bg-ev-calc">
         <div class="cost-overlay">
-            <img src="rectangle cost.png" class="img-ev-calc1">
+            <img src="../Images/Cost/rectangle cost.png" class="img-ev-calc1">
             <div class="calculator">
                 <h2>EV Cost Calculator</h2>
                 <h3>Battery Capacity</h3>
@@ -51,7 +65,7 @@
     </div>
 
     <div class="cost-section">
-        <img src="petrol calc bg.jpg" class="bg-petrol-calc">
+        <img src="../Images/Cost/petrol calc bg.jpg" class="bg-petrol-calc">
         <div class="cost-overlay">
             <div class="calculator">
                 <h2>Fuel Cost Calculator</h2>
