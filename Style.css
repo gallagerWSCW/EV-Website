@@ -288,7 +288,7 @@ img{
 
     .png1 {
         width: 100%;
-        height: 40vh;
+        height: 35vh;
         object-fit: cover;
         object-position: center;
     }
@@ -639,8 +639,236 @@ margin-top: 8px;
 .transport-carbon1-t2{
     color: rgb(176, 248, 142);
 }
-        
-       
+         
+@media screen and (max-width: 768px) { 
+    body{
+        margin:0;
+        overflow-x:hidden;
+    }
+    * {
+        box-sizing: border-box;
+    }
+    img {
+        max-width: 100%;
+    }
+    .ce-pg-title {
+        font-size: clamp(28px, 8vw, 44px);
+        padding: 0 12px;
+    }
+    .ce-pg-sub-title {
+        font-size: clamp(14px, 4vw, 20px);
+        padding: 10 12px;
+    }
+    .underline {
+        margin: 8px auto;
+    }
+    .carbem-section {
+        min-height: 0;
+        padding: 30px 0;
+        background: #111;
+    }
+    .carbem-bg {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .carbem-overlay {
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+        width: 100%;
+        padding: 20px 16px;
+    }
+    .carbem-overlay h1 {
+        font-size: clamp(23px, 6vw, 32px);
+        line-height: 1.3;
+        margin-bottom: 22px;
+    }
+    .carbem-title br {
+        display: none;
+    }
+    .carbem-content {
+        display: block;
+        width: 100%;
+        background: rgba(230, 245, 225, 0.92);
+        border-radius: 16px;
+        overflow: hidden;
+    }
+    .carbem-rectangle {
+        display: none;
+    }
+    .card-content {
+        position: static;
+        transform: none;
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+    }
+    .card-content p {
+        width: 100%;
+        margin: 0;
+        font-size: 15px;
+        line-height: 1.7;
+    }
+    .smokeimg {
+        width: min(100%, 220px);
+        height: auto;
+        border-radius: 10px;
+    }
+    .stats {
+        flex-wrap: wrap;
+        gap: 0;
+        padding: 20px 8px;
+    }
+    .stat {
+        width: 50%;
+        padding: 15px 8px;
+        border-right: 1px solid rgb(191, 233, 189);
+        border-bottom: 1px solid rgb(191, 233, 189);
+    }
+    .stat:nth-child(2) {
+        border-right: none;
+    }
+    .stat:last-child {
+        width: 100%;
+        border-right: none;
+        border-bottom: none;
+    }
+    .numbers {
+        font-size: clamp(20px, 5vw, 30px);
+    }
+    .words {
+        font-size: 13px;
+    }
+    div > h1 {
+        font-size: 26px;
+        text-align: center;
+        padding: 0 12px;
+    }
+    .gallery-part {
+        min-height: 560px;
+        background: #101510;
+        overflow: hidden;
+    }
+    .gallerybg {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .slider {
+        padding: 20px 12px;
+    }
+    .gallery-container {
+        gap: 16px;
+        padding-bottom: 12px;
+        align-items: flex-start;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+    }
+    .gallery {
+        flex-basis: 80%;
+        min-width: 0;
+        padding-left: 0;
+        scroll-snap-align: start;
+    }
+    .gallery-image {
+        width: 100%;
+        border-radius: 14px;
+    }
+    .gallery-image img {
+        width: 100%;
+        aspect-ratio: 4 / 3;
+        object-fit: cover;
+    }
+    .galleryinfo {
+        width: 100%;
+        opacity: 1;
+        padding: 12px 4px;
+        color: white;
+    }
+    .galleryinfo h3 {
+        font-size: 18px;
+        margin-top: 4px;
+        margin-bottom:8px;
+    }
+    .galleryinfo p {
+        font-size: 14px;
+        margin-top: 0;
+    }
+    .gallery:hover .gallery-image img {
+        transform: none;
+    }
+    .transport-carbon {
+        display: flex;
+        flex-direction: column;
+        background: #111;
+    }
+    .transport-carbon img {
+        width: 100%;
+        height: 240px;
+        object-fit: cover;
+        display: block;
+    }
+    .overlay1 {
+        position: relative;
+        top: auto;
+        left: auto;
+        width: 100%;
+        padding: 20px;
+        font-size: 15px;
+        line-height: 1.7;
+        background: #111;
+    }
+    .overlay1 h1 {
+        font-size: 25px;
+    }
+    .overlay1 br {
+        display: none;
+    }
+    .transport-carbon1 {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 20px;
+        padding: 20px;
+    }
+    .text {
+        width: 100%;
+    }
+    .text h1 {
+        font-size: 26px;
+        line-height: 1.3;
+    }
+    .transport-carbon1-t1,
+    .transport-carbon1-t2 {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+    .transport-carbon1 br {
+        display: none;
+    }
+    .ev,
+    .Petrol {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .transport-carbon1 img {
+        width: 100%;
+        max-width: 320px;
+        object-fit: cover;
+    }
+    .vs {
+        align-self: center;
+        margin: 0;
+    }
+}
+
 
 
 /*  EV BENEFITS     EV BENEFITS     EV BENEFITS     EV BENEFITS     EV BENEFITS     EV BENEFITS     EV BENEFITS
@@ -846,6 +1074,21 @@ margin-top: 8px;
 }
 .energy-card h2{
     color:white;
+}
+
+
+@media (max-width: 768px) {
+    .elec-nz{
+        display: flex;
+        flex-direction: column;
+    }
+    .elec-content{
+        width: 100%;
+    }
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
 }
 
 
