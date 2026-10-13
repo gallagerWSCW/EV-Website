@@ -1089,6 +1089,16 @@ margin-top: 8px;
         grid-template-columns: repeat(2, 1fr);
         gap: 15px;
     }
+    .name-EV,
+    .name-benf {
+        font-size: clamp(30px, 11vw, 55px);
+        margin: 0;
+    }
+
+    .title-name {
+        width: 88%;
+        left: 6%;
+    }
 }
 
 
